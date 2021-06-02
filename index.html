@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Hatly M3ak</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="title icon" href="images/logo.PNG" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-md navbar-light bg-light ">
+                <button class="navbar-toggler ml-auto mb-2" type="button" data-toggle="collapse" data-target="#myNavbar1">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--mobile nav-->
+                <div class="collapse navbar-collapse " id="myNavbar1">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <!--sidebar-->
+                            <div class="col-xl-2 col-lg-3 col-md-4 sidebar ">
+                                <a href="#" class="navbar-brand d-block  text-center mt-4 mb-4 "><img src="images/logo.PNG" alt="Logo" class="mb-2" />
+                                    <span class="navbar-text ">Hatly M3ak</span>
+                                </a>
+                                <!--devider-->
+                                <div class="bottom-border"></div>
+
+                                <div class="admin-info ">
+                                    <img src="images/admin-hamada.PNG" alt="Admin pic" class="d-block mx-auto  " />
+                                    <p class="text-white text-center name">Mohamed Hamada</p>
+                                </div>
+                                <!--devider-->
+                                <div class="bottom-border"></div>
+
+                                <!--Navigation elements-->
+                                <ul class="nav nav-pills flex-column text-center">
+                                    <li class="nav-item ">
+                                        <a href="#id_users" class="nav-link active" data-toggle="pill">Users</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#id_drivers" class="nav-link" data-toggle="pill">Drivers</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#id_orders" class="nav-link" data-toggle="pill">Orders</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#id_prices" class="nav-link" data-toggle="pill">Prices</a>
+                                    </li>
+                                </ul>
+                                <!--end of Navigation elements-->
+                            </div>
+                            <!--end of sidebar-->
+
+                            <!--head nav-->
+                            <div class="col-xl-10 col-lg-9 col-md-8 head-nav align-items-center">
+                                <div class="row bg-white pr-4 align-items-center">
+                                    <a href="#" class="log-out-logo ml-md-auto" data-toggle="modal" data-target="#sign-out-modal">
+                                        <img src="images/log out.png" alt="log-out icon" class="LogImg" />
+                                        <span class="log-out-txt"></span>
+                                    </a>
+                                </div>
+
+                                <!--content-->
+                                <div class="tab-content container-fluid ">
+                                    <div id="id_users" class="container-fluid tab-pane active">
+                                        <div class="jumbotron">
+                                            <h3>Users</h3>
+                                        </div>
+
+                                        <!--add user btn-->
+                                        <button class="btn-success d-block ml-auto mb-3 btn-cr" type="button" data-toggle="modal" data-target="#add-user-modal">
+                                            <span class="plus-icon mx-auto">+</span>
+                                        </button>
+                                        <!--end of user btn-->
+
+                                        <!--Users table-->
+                                        <section>
+                                            <div class="container-fluid">
+                                                <table class="table table-striped bg-light text-center">
+                                                    <thead>
+                                                        <tr class="text-muted">
+                                                            <th>#</th>
+                                                            <th>@username</th>
+                                                            <th>Name</th>
+                                                            <th>image</th>
+                                                            <th>Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>1</th>
+                                                            <td>Mohamed22</td>
+                                                            <td>Mohamed Alrawy</td>
+                                                            <td>
+                                                                <button type="button" class="btn" data-toggle="modal" data-target="#img-modal">
+                                                                    <img src="images/pr.png" alt="profile pic" class="p-image" />
+                                                                </button>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-group ">
+                                                                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                                                                        data-target="#edit-user-modal">
+                                                                        Edit
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                                                        data-target="#delete-modal">
+                                                                        Delete
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>2</th>
+                                                            <td>Mohamed22</td>
+                                                            <td>Mohamed Alrawy</td>
+                                                            <td>
+                                                                <button type="button" class="btn" data-toggle="modal" data-target="#img-modal">
+                                                                    <img src="images/pr.png" alt="profile pic" class="p-image" />
+                                                                </button>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-group">
+                                                                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                                                                        data-target="#edit-user-modal">
+                                                                        Edit
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                                                        data-target="#delete-modal">
+                                                                        Delete
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>3</th>
+                                                            <td>Mohamed22</td>
+                                                            <td>Mohamed Alrawy</td>
+                                                            <td>
+                                                                <button type="button" class="btn" data-toggle="modal" data-target="#img-modal">
+                                                                    <img src="images/pr.png" alt="profile pic" class="p-image" />
+                                                                </button>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-group">
+                                                                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                                                                        data-target="#edit-user-modal">
+                                                                        Edit
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                                                        data-target="#delete-modal">
+                                                                        Delete
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>4</th>
+                                                            <td>Mohamed22</td>
+                                                            <td>Mohamed Alrawy</td>
+                                                            <td>
+                                                                <button type="button" class="btn" data-toggle="modal" data-target="#img-modal">
+                                                                    <img src="images/pr.png" alt="profile pic" class="p-image" />
+                                                                </button>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-group">
+                                                                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                                                                        data-target="#edit-user-modal">
+                                                                        Edit
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                                                        data-target="#delete-modal">
+                                                                        Delete
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>5</th>
+                                                            <td>Mohamed22</td>
+                                                            <td>Mohamed Alrawy</td>
+                                                            <td>
+                                                                <button type="button" class="btn" data-toggle="modal" data-target="#img-modal">
+                                                                    <img src="images/pr.png" alt="profile pic" class="p-image" />
+                                                                </button>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-group">
+                                                                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                                                                        data-target="#edit-user-modal">
+                                                                        Edit
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                                                        data-target="#delete-modal">
+                                                                        Delete
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>6</th>
+                                                            <td>Mohamed22</td>
+                                                            <td>Mohamed Alrawy</td>
+                                                            <td>
+                                                                <button type="button" class="btn" data-toggle="modal" data-target="#img-modal">
+                                                                    <img src="images/pr.png" alt="profile pic" class="p-image" />
+                                                                </button>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-group">
+                                                                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                                                                        data-target="#edit-user-modal">
+                                                                        Edit
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                                                        data-target="#delete-modal">
+                                                                        Delete
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>7</th>
+                                                            <td>Mohamed22</td>
+                                                            <td>Mohamed Alrawy</td>
+                                                            <td>
+                                                                <button type="button" class="btn" data-toggle="modal" data-target="#img-modal">
+                                                                    <img src="images/pr.png" alt="profile pic" class="p-image" />
+                                                                </button>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-group">
+                                                                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                                                                        data-target="#edit-user-modal">
+                                                                        Edit
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                                                        data-target="#delete-modal">
+                                                                        Delete
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>8</th>
+                                                            <td>Mohamed22</td>
+                                                            <td>Mohamed Alrawy</td>
+                                                            <td>
+                                                                <button type="button" class="btn" data-toggle="modal" data-target="#img-modal">
+                                                                    <img src="images/pr.png" alt="profile pic" class="p-image" />
+                                                                </button>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-group">
+                                                                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                                                                        data-target="#edit-user-modal">
+                                                                        Edit
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                                                        data-target="#delete-modal">
+                                                                        Delete
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </section>
+                                        <!--end of Users table-->
+
+                                        <!--pagination-->
+                                        <nav>
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link">
+                                                        <span>&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item active">
+                                                    <a href="#" class="page-link ">
+                                                        1
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link">
+                                                        2
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link">
+                                                        3
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link">
+                                                        4
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link">
+                                                        5
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link">
+                                                        <span>&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        <!--End of pagination-->
+                                    </div>
+
+                                    <div id="id_drivers" class="container-fluid tab-pane ">
+                                        <div class="jumbotron">
+                                            <h3>Drivers</h3>
+                                        </div>
+                                        <!--add driver btn-->
+                                        <button class="btn-success d-block ml-auto mb-3 btn-cr" type="button" data-toggle="modal" data-target="#add-user-modal">
+                                            <span class="plus-icon mx-auto">+</span>
+                                        </button>
+                                        <!--end of driver btn-->
+
+                                        <!--Driver table-->
+                                        <section>
+                                            <div class="container-fluid">
+                                                <table class="table table-striped bg-light text-center">
+                                                    <thead>
+                                                        <tr class="text-muted">
+                                                            <th>#</th>
+                                                            <th>@username</th>
+                                                            <th>Name</th>
+                                                            <th>image</th>
+                                                            <th>Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>1</th>
+                                                            <td>Mohamed22</td>
+                                                            <td>Mohamed Alrawy</td>
+                                                            <td>
+                                                                <button type="button" class="btn" data-toggle="modal" data-target="#img-modal">
+                                                                    <img src="images/pr.png" alt="profile pic" class="p-image" />
+                                                                </button>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-group ">
+                                                                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                                                                        data-target="#edit-driver-modal">
+                                                                        Edit
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                                                        data-target="#delete-modal">
+                                                                        Delete
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>2</th>
+                                                            <td>Mohamed22</td>
+                                                            <td>Mohamed Alrawy</td>
+                                                            <td>
+                                                                <button type="button" class="btn" data-toggle="modal" data-target="#img-modal">
+                                                                    <img src="images/pr.png" alt="profile pic" class="p-image" />
+                                                                </button>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-group">
+                                                                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                                                                        data-target="#edit-driver-modal">
+                                                                        Edit
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                                                        data-target="#delete-modal">
+                                                                        Delete
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>3</th>
+                                                            <td>Mohamed22</td>
+                                                            <td>Mohamed Alrawy</td>
+                                                            <td>
+                                                                <button type="button" class="btn" data-toggle="modal" data-target="#img-modal">
+                                                                    <img src="images/pr.png" alt="profile pic" class="p-image" />
+                                                                </button>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-group">
+                                                                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                                                                        data-target="#edit-driver-modal">
+                                                                        Edit
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                                                        data-target="#delete-modal">
+                                                                        Delete
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>4</th>
+                                                            <td>Mohamed22</td>
+                                                            <td>Mohamed Alrawy</td>
+                                                            <td>
+                                                                <button type="button" class="btn" data-toggle="modal" data-target="#img-modal">
+                                                                    <img src="images/pr.png" alt="profile pic" class="p-image" />
+                                                                </button>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-group">
+                                                                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                                                                        data-target="#edit-driver-modal">
+                                                                        Edit
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                                                        data-target="#delete-modal">
+                                                                        Delete
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>5</th>
+                                                            <td>Mohamed22</td>
+                                                            <td>Mohamed Alrawy</td>
+                                                            <td>
+                                                                <button type="button" class="btn" data-toggle="modal" data-target="#img-modal">
+                                                                    <img src="images/pr.png" alt="profile pic" class="p-image" />
+                                                                </button>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-group">
+                                                                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                                                                        data-target="#edit-driver-modal">
+                                                                        Edit
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                                                        data-target="#delete-modal">
+                                                                        Delete
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>6</th>
+                                                            <td>Mohamed22</td>
+                                                            <td>Mohamed Alrawy</td>
+                                                            <td>
+                                                                <button type="button" class="btn" data-toggle="modal" data-target="#img-modal">
+                                                                    <img src="images/pr.png" alt="profile pic" class="p-image" />
+                                                                </button>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-group">
+                                                                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                                                                        data-target="#edit-driver-modal">
+                                                                        Edit
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                                                        data-target="#delete-modal">
+                                                                        Delete
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>7</th>
+                                                            <td>Mohamed22</td>
+                                                            <td>Mohamed Alrawy</td>
+                                                            <td>
+                                                                <button type="button" class="btn" data-toggle="modal" data-target="#img-modal">
+                                                                    <img src="images/pr.png" alt="profile pic" class="p-image" />
+                                                                </button>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-group">
+                                                                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                                                                        data-target="#edit-driver-modal">
+                                                                        Edit
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                                                        data-target="#delete-modal">
+                                                                        Delete
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>8</th>
+                                                            <td>Mohamed22</td>
+                                                            <td>Mohamed Alrawy</td>
+                                                            <td>
+                                                                <button type="button" class="btn" data-toggle="modal" data-target="#img-modal">
+                                                                    <img src="images/pr.png" alt="profile pic" class="p-image" />
+                                                                </button>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-group">
+                                                                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                                                                        data-target="#edit-driver-modal">
+                                                                        Edit
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                                                        data-target="#delete-modal">
+                                                                        Delete
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </section>
+                                        <!--end of drivers table-->
+
+                                        <!--pagination-->
+                                        <nav>
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link">
+                                                        <span>&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item active">
+                                                    <a href="#" class="page-link ">
+                                                        1
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link">
+                                                        2
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link">
+                                                        3
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link">
+                                                        4
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link">
+                                                        5
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link">
+                                                        <span>&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        <!--End of pagination-->
+                                    </div>
+
+                                    <div id="id_orders" class="container-fluid tab-pane ">
+                                        <div class="jumbotron">
+                                            <h3>Orders</h3>
+                                        </div>
+                                        <!--Ordera table-->
+                                        <section>
+                                            <div class="container-fluid">
+                                                <table class="table table-striped bg-light text-center">
+                                                    <thead>
+                                                        <tr class="text-muted">
+                                                            <th>#</th>
+                                                            <th>Date</th>
+                                                            <th>From</th>
+                                                            <th>To</th>
+                                                            <th>Price</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>1</th>
+                                                            <td>10-oct-217</td>
+                                                            <td>Al badary street</td>
+                                                            <td>abraj al nasr</td>
+                                                            <td>93 LE</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>2</th>
+                                                            <td>10-oct-217</td>
+                                                            <td>Al badary street</td>
+                                                            <td>abraj al nasr</td>
+                                                            <td>43 LE</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>3</th>
+                                                            <td>10-oct-217</td>
+                                                            <td>Al badary street</td>
+                                                            <td>abraj al nasr</td>
+                                                            <td>59 LE</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>4</th>
+                                                            <td>10-oct-217</td>
+                                                            <td>Al badary street</td>
+                                                            <td>abraj al nasr</td>
+                                                            <td>83 LE</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>5</th>
+                                                            <td>10-oct-217</td>
+                                                            <td>Al badary street</td>
+                                                            <td>abraj al nasr</td>
+                                                            <td>45 LE</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>6</th>
+                                                            <td>10-oct-217</td>
+                                                            <td>Al badary street</td>
+                                                            <td>abraj al nasr</td>
+                                                            <td>24 LE</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>7</th>
+                                                            <td>10-oct-217</td>
+                                                            <td>Al badary street</td>
+                                                            <td>abraj al nasr</td>
+                                                            <td>193 LE</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>8</th>
+                                                            <td>10-oct-217</td>
+                                                            <td>Al badary street</td>
+                                                            <td>abraj al nasr</td>
+                                                            <td>134 LE</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </section>
+                                        <!--end of Users table-->
+
+                                        <!--pagination-->
+                                        <nav>
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link">
+                                                        <span>&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item active">
+                                                    <a href="#" class="page-link ">
+                                                        1
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link">
+                                                        2
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link">
+                                                        3
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link">
+                                                        4
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link">
+                                                        5
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link">
+                                                        <span>&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        <!--End of pagination-->
+                                    </div>
+                                    <div id="id_prices" class="container-fluid tab-pane ">
+                                        <div class="jumbotron">
+                                            <h3>Prices</h3>
+                                        </div>
+
+                                        <section>
+                                            <div class="container-fluid">
+                                                <table class="table table-striped bg-light text-center">
+                                                    <thead>
+                                                        <tr class="text-muted">
+                                                            <th>#</th>
+                                                            <th>Prices/Kilo</th>
+                                                            <th>Date</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>1</th>
+                                                            <td>8 L2</td>
+                                                            <td>22-Jun-2019</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>2</th>
+                                                            <td>7 L2</td>
+                                                            <td>22-Jun-2019</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>3</th>
+                                                            <td>8 L2</td>
+                                                            <td>3-Oct-2019</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>4</th>
+                                                            <td>11 L2</td>
+                                                            <td>17-Oct-2019</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </section>
+                                        <!--end of prices table-->
+                                    </div>
+                                </div>
+
+                                <!--end of content-->
+                            </div>
+                            <!--end of head nav-->
+                        </div>
+                    </div>
+                </div>
+                <!--end of mobile nav-->
+            </nav>
+            <!--End of Navbar-->
+
+            <!--Modal log out-->
+            <div class="modal fade" id="sign-out-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">
+                                Sign out...
+                            </h4>
+                            <button type="button" class="close" data-dismiss="modal">
+                                &times;
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            do you want to leave... ?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal">
+                                Stay
+                            </button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                sign out
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--end of Modal log out-->
+
+            <!--add new user-->
+            <div class="modal fade" id="add-user-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">
+                                Add New User
+                            </h4>
+                            <button type="button" class="close" data-dismiss="modal">
+                                &times;
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="u-id">Username</label>
+                                    <input type="name" class="form-control" id="u-id" placeholder="Enter username" name="username" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="u-f-name">First name</label>
+                                    <input type="name" class="form-control" id="u-f-name" placeholder="Enter First name" name="user-f-name" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="u-s-name">Second name</label>
+                                    <input type="name" class="form-control" id="u-s-name" placeholder="Enter Second name" name="user-s-name" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd">Password:</label>
+                                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="file-pic">Select a pic</label>
+                                    <input type="file" class="form-control-file border" name="file" id="file-pic">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-success" data-dismiss="modal">
+                                Add
+                            </button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End of add new user-->
+
+            <!--add new Driver-->
+            <div class="modal fade" id="add-driver-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">
+                                Add New Driver
+                            </h4>
+                            <button type="button" class="close" data-dismiss="modal">
+                                &times;
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="u-id">Username</label>
+                                    <input type="name" class="form-control" id="u-id" placeholder="Enter username" name="username" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="u-f-name">First name</label>
+                                    <input type="name" class="form-control" id="u-f-name" placeholder="Enter First name" name="user-f-name" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="u-s-name">Second name</label>
+                                    <input type="name" class="form-control" id="u-s-name" placeholder="Enter Second name" name="user-s-name" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd">Password:</label>
+                                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="file-pic">Select a pic</label>
+                                    <input type="file" class="form-control-file border" name="file" id="file-pic">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-success" data-dismiss="modal">
+                                Add
+                            </button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End of add new driver-->
+
+            <!--Modal - delete-->
+            <div class="modal fade" id="delete-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title text-danger">
+                                Warning
+                            </h4>
+                            <button type="button" class="close" data-dismiss="modal">
+                                &times;
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Delete this Record ?!!!
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal">
+                                Cancle
+                            </button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End of Modal - delete-->
+
+            <!--img modal-->
+            <div class="modal fade" id="img-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">
+                                &times;
+                            </button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="images/pr.png" alt="Person image">
+                        </div>
+                    </div>
+                </div>
+                <!--End of img modal-->
+            </div>
+
+
+
+            <!--Edit user-->
+            <div class="modal fade" id="edit-user-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">
+                                Edit user
+                            </h4>
+                            <button type="button" class="close" data-dismiss="modal">
+                                &times;
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="u-id">Username</label>
+                                    <input type="name" class="form-control" id="u-id" placeholder="Enter username" name="username" value="mohamed22" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="u-f-name">First name</label>
+                                    <input type="name" class="form-control" id="u-f-name" placeholder="Enter First name" name="user-f-name" value="Mohamed" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="u-s-name">Second name</label>
+                                    <input type="name" class="form-control" id="u-s-name" placeholder="Enter Second name" name="user-s-name" value="Alrawy" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="file-pic">Select a new pic</label>
+                                    <input type="file" class="form-control-file border" name="file" id="file-pic">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-success" data-dismiss="modal">
+                                Confirm
+                            </button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End of Edit user-->
+
+            <!--Edit driver-->
+            <div class="modal fade" id="edit-driver-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">
+                                Edit Driver
+                            </h4>
+                            <button type="button" class="close" data-dismiss="modal">
+                                &times;
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="u-id">Username</label>
+                                    <input type="name" class="form-control" id="u-id" placeholder="Enter username" name="username" value="mohamed22" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="u-f-name">First name</label>
+                                    <input type="name" class="form-control" id="u-f-name" placeholder="Enter First name" name="user-f-name" value="Mohamed" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="u-s-name">Second name</label>
+                                    <input type="name" class="form-control" id="u-s-name" placeholder="Enter Second name" name="user-s-name" value="Alrawy" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="file-pic">Select a new pic</label>
+                                    <input type="file" class="form-control-file border" name="file" id="file-pic">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-success" data-dismiss="modal">
+                                Confirm
+                            </button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End of Edit drivers-->
+
+            <script src="js/poper 1.14.6.js"></script>
+            <script src="js/jquery-3.3.1.min.js"></script>
+            <script src="js/bootstrap.js"></script>
+    </body>
+
+</html>
